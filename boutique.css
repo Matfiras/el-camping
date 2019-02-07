@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC|Lobster');
+.logo{
+    display: flex;
+    color: rgba(58, 48, 48, 0.733);
+}
+.external-links{
+    margin-top: 0.3%;
+    font-family: 'Lobster', cursive;
+    font-size: 110%;
+    color: rgba(58, 48, 48, 0.733);
+}
+body{
+    background: black;
+}
+nav{
+    position: fixed;
+    width: 100vw;
+    top:0;
+}
+section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.new-section-title{
+    font-family: 'Lobster', cursive;
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.item-line{
+    background: white;
+    border-radius: 20px;
+    margin-top:3%;
+}
+/* .item-line>div{
+    border: 1px solid red;
+} */
+.first{
+    height:80px;
+}
+.image{
+    width:100%;
+}
+.total-bag{
+    position: fixed;
+    z-index: 10;
+    font-family: 'Lobster', cursive;
+    color:white;
+    background: rgba(125, 231, 226, 0.555);
+    right:5%;
+    padding:0% 3%;
+    border-radius: 8px;
+}
+.total-bag>i, .total-bag>h3 {
+    display: inline-block;
+}
+.item-spec, .item-tarif, .item-total{
+    padding:1%;
+}
+.number{
+    display: inline-block;
+}
+.item-title{
+    font-family: 'Lobster', cursive;
+}
+
+
+
+
+
+
+
+.social-m{
+    display: flex;
+    justify-content: center;
+}
+.media-links{
+    margin:2% 3% 2%;
+}
+.All-r-2018{
+    margin:1% 0% 2%;
+}
