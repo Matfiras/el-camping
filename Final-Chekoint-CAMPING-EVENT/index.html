@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="index.js"></script>
+    
+</head>
+<body class="body-general-style">
+    <div class="container-fluid sticky-top">
+      <nav class="  row justify-content-between nav-positin " style="background-color: rgba(244, 245, 239, 0.7)">
+        <div class="logo col-sm-3"><h4 style="font-family: 'Lobster', cursive;">el</h4><h4 style="font-family:'Holtwood One SC', serif;font-size: 95%;margin:3% 1% 0.5% 0.5% ">CAMPING</h4></div>
+        <div class="external-links col-sm-2">Home</div>
+        <div class="external-links col-sm-2">Shop</div>
+        <div class="external-links col-sm-2">Events</div>
+        <div class="external-links col-sm-2">About Us</div>
+      </nav>
+    </div>
+    <hr>
+    <hr>
+    <div class="pos-but">
+    <div class="btn-group pos-but" role="group" aria-label="Basic example">
+      <button id="mode-1" type="button" class="btn btn-secondary" onclick="mode(id)"><i class="far fa-window-maximize"></i></button>
+      <button id="mode-2" type="button" class="btn btn-secondary" onclick="mode(id)"><i class="far fa-list-alt"></i></button>
+    </div>
+    </div>
+    <hr> 
+    <hr>
+    <div id="calendar" class="calnedar-mode">
+      <div  class="row existing-event">
+        <div id="more-info-1" style="cursor: pointer" class=" card col-sm-4" style="width: 18rem;" data-toggle="modal" data-target="#myModal" >
+          <img id="img-src" class="img-size-tp" src="http://kharjet.tn/sites/default/files/2017-11/Randonn%C3%A9e%20%C3%A0%20Bni%20Mtir%20%20Ain%20Drahem.jpg" onclick="info()" alt="Card image cap">
+          <div class="card-body">
+            <h6 id="date-src"><i class="far fa-calendar-alt"></i> 25/04/2019</h6>
+            <h6 id="place-src"></h6><i class="fas fa-map-marked-alt"></i> Beni Mtir</h6>
+            
+          </div>
+        </div>
+        <div id="more-info-2" style="cursor: pointer" class="card col-sm-4" style="width: 18rem;">
+          <img class="img-size-tp" src="http://www.webdo.tn/wp-content/uploads/2018/02/camp.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h6><i class="far fa-calendar-alt"></i> 08/03/2019</h6>
+            <h6><i class="fas fa-map-marked-alt"></i> Ain Soltan</h6>
+            
+          </div>
+        </div>
+        <div id="more-info-3" style="cursor: pointer" class="card col-sm-4" style="width: 18rem;">
+          <img class="img-size-tp" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Lac_Bleu_et_Mellah.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h6><i class="far fa-calendar-alt"></i> 17/05/2019</h6>
+            <h6><i class="fas fa-map-marked-alt"></i> Wed Mellag</h6>
+            
+          </div>
+        </div>
+      </div>
+        <div id="mode-1" class="row existing-event">
+          <div id="more-info-4" style="cursor: pointer" class="card col-sm-4" style="width: 18rem;">
+            <img class="img-size-tp" src="http://www.webdo.tn/wp-content/uploads/2017/02/Table-de-Jugurtha.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h6><i class="far fa-calendar-alt"></i> 12/05/2019</h6>
+              <h6><i class="fas fa-map-marked-alt"></i> Table de Jugurtha</h6>
+              
+            </div>
+          </div>
+          <div id="more-info-5" style="cursor: pointer" class="card col-sm-4" style="width: 18rem;">
+            <img class="img-size-tp" src="https://i.ytimg.com/vi/zrIj88Y0VIE/maxresdefault.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h6><i class="far fa-calendar-alt"></i> 06/07/2019</h6>
+              <h6><i class="fas fa-map-marked-alt"></i> Les grottes d'El Haouaria</h6>
+              
+            </div>
+          </div>
+          <div id="more-info-6" style="cursor: pointer" class="card col-sm-4" style="width: 18rem;">
+            <img class="img-size-tp" alt="Card image cap">
+            <div class="card-body">
+              <h6><i class="far fa-calendar-alt"></i> 02/06/2019</h6>
+              <h6 id="place-dest"><i class="fas fa-map-marked-alt"></i> L'oasis de Tozeur</h6>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div id="modal-info" class="modal-body">
+          <img id="img-dest" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="img-size-tp" src="" alt="Card image cap">
+          <div class="card-body">
+            <h6 id="date-dest"><i class="far fa-calendar-alt"></i></h6>
+            <h6><i class="fas fa-map-marked-alt"></i> </h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>   
+
+</body>
+</html>
