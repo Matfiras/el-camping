@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC|Lobster');
 .logo{
     display: flex;
-    color: rgba(12, 11, 11, 0.733);
+    color: rgba(58, 48, 48, 0.733);
 }
 .external-links{
     margin-top: 0.3%;
@@ -10,7 +10,7 @@
     color: rgba(58, 48, 48, 0.733);
 }
 body{
-    background: black;
+    background: red;
     color: white;
 }
 .hero{
