@@ -18,6 +18,8 @@ function increment(i){
     }
 }
 function decrement(i){
+
+    
     if (buy[i]==false){
     if (A[i]<=0){
         document.getElementById('item'+i+'number').innerText=0;
