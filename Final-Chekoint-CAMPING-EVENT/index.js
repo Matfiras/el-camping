@@ -10,17 +10,20 @@ if (m==='mode-2'){
 }
 }
 
-function info(){
-  var img = document.getElementById("img-src").getAttribute("src")
-  document.getElementById("img-dest").setAttribute("src",img)
+function info(x){
+  var rf=x[x.length-1]
+  var htest= document.getElementById("test"+rf)
+  if(document.getElementById("date-dest-"+rf).contains(htest)===false){
+  var img = document.getElementById(x).getAttribute("src")
+  document.getElementById("img-dest-"+rf).setAttribute("src",img)
   var z = document.createElement('h6')
-  var h6= document.getElementById("date-src").innerText
+  var h6= document.getElementById("date-src-"+rf).innerText
   z.innerHTML = h6;
-  document.getElementById("date-dest").appendChild(z);
+  document.getElementById("date-dest-"+rf).appendChild(z);
+  document.getElementsByTagName("H6")[0].setAttribute("id", "test"+rf)
 }
-  //
-  //document.getElementById("date-dest").appendChild(h6)
 }
+
 
 function bigImg(x) {
   x.style.height = "110%";
